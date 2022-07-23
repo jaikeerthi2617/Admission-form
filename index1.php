@@ -1,3 +1,5 @@
+<!-- Create database with name myform  and table with name details in xampp -->
+
 <?php
   $host = "localhost";
   $username = "root";
