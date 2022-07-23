@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Document</title>
+    <script type="text/javascript" src="index.js"></script>
+    <style>
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form name="admission" id="form">
+                <h1>Get Started</h1>
+                <h3>Personal details</h3>
+                <div class="wrapper">
+                  <div class="input_wrapper">
+                    <label for="first_name">FIRST NAME:</label>
+                    <input type="text" id="first_name" class="box" required />
+                    <span id="f"> </span>
+                  </div>
+                  <div class="input_wrapper">
+                    <label for="last_name">LAST NAME:</label>
+                    <input type="text" id="last_name" class="box" required />
+                    <span id="l"> </span>
+                  </div>
+                </div>
+      
+                <div class="wrapper">
+                  <div class="input_wrapper">
+                    <label for="DOB">DATE OF BIRTH:</label>
+                    <input type="date" required class="box" value="2022-05-12" />
+                  </div>
+                  <div class="input_wrapper">
+                    <label for="mobile">MOBILE:</label>
+                    <input type="number" id="mobile" required class="box" />
+                    <span id="messages"> </span>
+                  </div>
+                </div>
+      
+                <div class="wrapper">
+                  <div class="input_wrapper">
+                    <label for="address">ADDRESS:</label>
+                    <textarea rows="10" cols="35" required></textarea>
+                  </div>
+                  <div class="input_wrapper">
+                    <label for="lang">LANGUAGE:</label>
+                    <input type="text" class="box" />
+                  </div>
+                </div>
+                <h3>Family details</h3>
+                <div class="wrapper">
+                  <div class="input_wrapper">
+                    <label for="father_name">FATHER NAME:</label>
+                    <input type="text" id="father_name" required class="box" />
+                  </div>
+                  <div class="input_wrapper">
+                    <label for="f_oc">OCCUPATION:</label>
+                    <select name="occu" id="occui" required class="box">
+                      <option value="8">Select occupation</option>
+                      <option value="1">Engineer</option>
+                      <option value="2">weaver</option>
+                      <option value="3">teacher</option>
+                      <option value="4">government officer</option>
+                      <option value="5">other</option>
+                    </select>
+                  </div>
+                </div>
+      
+                <div class="wrapper">
+                  <div class="input_wrapper">
+                    <label for="mother_name">MOTHER NAME:</label>
+                    <input type="text" id="mother_name" required class="box" />
+                  </div>
+                  <div class="input_wrapper">
+                    <label for="m_oc">OCCUPATION:</label>
+                    <select name="occu" id="occu" required class="box">
+                      <option value="8">Select occupation</option>
+                      <option value="1">Engineer</option>
+                      <option value="2">weaver</option>
+                      <option value="3">teacher</option>
+                      <option value="4">House wife</option>
+                      <option value="5">other</option>
+                    </select>
+                  </div>
+                </div>
+      
+                <div class="wrapper">
+                  <div class="input_wrapper">
+                    <label for="income"> ANNUAL INCOME:</label>
+                    <input type="number" id="income" required />
+                  </div>
+                </div>
+                <h3>Academic details</h3>
+                <h4>Class 10</h4>
+                <div class="wrapper">
+                  <div class="input_wrapper">
+                    <label for="s_clg">SCHOOL NAME:</label>
+                    <input type="text" id="s_clg" required class="box" />
+                  </div>
+                  <div class="input_wrapper">
+                    <label for="s_type">BOARD:</label>
+                    <select id="s_type" class="box">
+                      <option value="CBSE">CBSE</option>
+                      <option value="STATE">STATE</option>
+                      <option value="ICSE">ICSE</option>
+                    </select>
+                  </div>
+                </div>
+      
+                <div class="wrapper">
+                  <div class="input_wrapper">
+                    <label for="s_perc">GRADE:</label>
+                    <input type="text" id="s_perc" class="box" />
+                  </div>
+                  <div class="input_wrapper">
+                    <label for="s_date">YEAR:</label>
+                    <input type="date" id="s_date" class="box" />
+                  </div>
+                </div>
+      
+                <h4>Class 12</h4>
+                <div class="wrapper">
+                  <div class="input_wrapper">
+                    <label for="p_clg">COLLEGE NAME:</label>
+                    <input type="text" id="p_clg" required class="box" />
+                  </div>
+                  <div class="input_wrapper">
+                    <label for="p_type">BOARD:</label>
+                    <select id="p_type" class="box">
+                      <option value="CBSE">CBSE</option>
+                      <option value="STATE">STATE</option>
+                      <option value="ICSE">ICSE</option>
+                    </select>
+                  </div>
+                </div>
+      
+                <div class="wrapper">
+                  <div class="input_wrapper">
+                    <label for="p_perc">GRADE:</label>
+                    <input type="text" id="p_perc" class="box" />
+                  </div>
+                  <div class="input_wrapper">
+                    <label for="p_date">YEAR:</label>
+                    <input type="date" id="p_date" class="box" value="2022-05-12" />
+                  </div>
+                </div>
+                <h4>Entrance exam details</h4>
+                <div class="wrapper">
+                  <div class="input_wrapper">
+                    <label for="p_perc">CET RANK:</label>
+                    <input type="number" id="p_perc" class="box" />
+                  </div>
+                  <div class="input_wrapper">
+                    <label for="cat">CATEGORY:</label>
+                    <select class="box" id="cat">
+                      <option value="GEN">GENERAL</option>
+                      <option value="OBC">OBC</option>
+                      <option value="2A">2A</option>
+                      <option value="2B">2B</option>
+                      <option value="SC">SC</option>
+                      <option value="ST">ST</option>
+                    </select>
+                  </div>
+                </div>
+      
+                <div class="wrapper">
+                  <div class="input_wrapper">
+                    <label for="awards">AWARDS:</label>
+                    <textarea cols="30" rows="10" id="awards" class="area"></textarea>
+                  </div>
+                </div>
+      
+                <div class="wrapper">
+                  <div class="input_wrapper">
+                    <label for="hobby">HOBBIES:</label>
+                    <textarea cols="30" rows="10" id="hobby" class="area"></textarea>
+                  </div>
+                </div>
+      
+                <div class="button-wrapper">
+                  <input type="button" value="RESET" class="reset" />
+                  <input type="submit" value="SUBMIT" class="submit" onclick="msg()" />
+                </div>
+              </form>
+        </div>
+        <div class="banner-container">
+            <div class="logo-cover"><img src="logo.png"></div>
+            <h1>
+                BMS INSTITUTE OF TECHNOLOGY AND MANAGEMENT
+            </h1>
+            <h1>
+                ADMISSION APPLICATION
+            </h1>
+           <footer>
+            <p>
+                Avalahalli,Doddaballpura main road,<br> Yelahanaka,Bengaluru-560064
+            </p>
+           </footer>
+        </div>
+
+    </div>
+</body>
+
+</html>
